@@ -1,16 +1,34 @@
 #include<stdio.h>
 int main(){
+    // int i = 4;
+    // printf("\nAdress of i: %p", &i);
+    // printf("\nvalue of i : %d",i);
+    // printf("\nvalue of i : %d",*(&i));
+    // int *ptr = &i;
+    // printf("\nAddress of i: %p",ptr);
+    // printf("\nValue of i: %d",*ptr);
+    
+    int a = 4;
+    int *y = &a;
+    printf("\nValue of a : %d", a);
+    printf("\nValue of a :%d",*y);
 
-    int marks[10];
-    int no_of_students = 10;
-    for(int i = 0; i< no_of_students ;i++){
-    printf("Please enter the marks of students %d:",(i+1));
-    scanf("%d",&marks[i]);
-    }
-    for(int i = 0; i< no_of_students ; i++){
-        printf("\nMarks of students %d are: %d",(i+1),marks[i]);
-    }
-     
+    printf("\nAddress in random integer of a: %d", &a);
+    printf("\nAddress in random integer of a:%d",y);
 
-    return 0;
+    printf("\nAddress of a : %p", &a);
+    printf("\nAddress of a : %p",y);
+
+    printf("\nnValue in address of a:%p",*y);
+    printf("\nValue in address of a: %p", a);
+    
+    printf("\nAddress in random integer of y: %d",&y);
+    printf("\nAddress of y: %p",&y);
+    
+    
+
+    
+
+
+  return 0;
 }
