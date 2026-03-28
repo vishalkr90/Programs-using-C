@@ -5,12 +5,13 @@
     int main(){
 
     swap(4,5);
+    swap(8,9);
 
     return 0;
 }
 
    void swap(int first,int second){
-    printf("first : %d, second : %d",first,second);
+    printf("\nfirst : %d, second : %d",first,second);
      int temp = first;
        first = second;
        second = temp;
