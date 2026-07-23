@@ -17,7 +17,8 @@ printf("\nValue of a: %d",a);
 printf("\nValue of a: %d",**c);
 
 int x = 5;
-int *f = x;
+int *f;
+*f = x;
 printf("\n%d",*f);
     return 0;
 }
